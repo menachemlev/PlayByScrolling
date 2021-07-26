@@ -1,7 +1,7 @@
 "use strict";
  /*The app is going through all the entries(YouTube iframes) every time the page is scrolling.
 When videos are at-least 60% visible they will start playing and rest of the videos will stop. To change to playing state,
-the page is modifying the source attribute ,changing the parameteres 'autoplay' and 'mute'(must come together)*/
+the app is modifying the the iframe's source attribute,changing the parameteres 'autoplay' and 'mute'(must come together)*/
 function playVideos(entries, observer) { 
   entries.forEach((entry) => {
     const SRC = entry.target.getAttribute("src");
