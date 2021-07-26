@@ -16,7 +16,7 @@ function playVideos(entries, observer) {
 
 
 
-//Setting up the observer observe and to play each video when it is at-least 60% percent visible.
+//Setting up the observer to observe and to play each video when it is at-least 60% percent visible.
 const observer = new IntersectionObserver(playVideos, {
   root: null,
   threshold: 0.6,
